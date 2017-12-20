@@ -70,7 +70,7 @@ network_configuration=$(
     --arg deployment_reserved_ip_ranges "$DEPLOYMENT_EXCLUDED_RANGE" \
     --arg deployment_dns "$DEPLOYMENT_NW_DNS" \
     --arg deployment_gateway "$DEPLOYMENT_NW_GATEWAY" \
-    --arg deployment_availability_zones "$DEPLOYMENT_NW_AZS"
+    --arg deployment_availability_zones "$DEPLOYMENT_NW_AZS" \
     '
     {
       "icmp_checks_enabled": $icmp_checks_enabled,
