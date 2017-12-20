@@ -76,4 +76,4 @@ inputs:
   - name: pcf-pipelines
 
 run:
-  path: pcf-pipelines/install-pcf/vsphere/tasks/config-opsdir/task.sh
+  path: pcf-pipelines-git/install-pcf/vsphere/tasks/config-opsdir/task.sh
