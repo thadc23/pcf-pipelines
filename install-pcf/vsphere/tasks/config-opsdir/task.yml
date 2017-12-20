@@ -73,7 +73,7 @@ params:
   NSX_CA_CERTIFICATE:
 
 inputs:
-  - name: pcf-pipelines-g
+  - name: pcf-pipelines
 
 run:
-  path: pcf-pipelines-g/install-pcf/vsphere/tasks/config-opsdir/task.sh
+  path: pcf-pipelines/install-pcf/vsphere/tasks/config-opsdir/task.sh
