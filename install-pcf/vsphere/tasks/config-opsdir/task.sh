@@ -159,8 +159,6 @@ om-linux -t https://$OPSMAN_DOMAIN_OR_IP_ADDRESS -k -u $OPS_MGR_USR -p $OPS_MGR_
 om-linux \
   --target https://$OPSMAN_DOMAIN_OR_IP_ADDRESS \
   --skip-ssl-validation \
-  --client-id "${OPSMAN_CLIENT_ID}" \
-  --client-secret "${OPSMAN_CLIENT_SECRET}" \
   --username "$OPS_MGR_USR" \
   --password "$OPS_MGR_PWD" \
   configure-bosh \
