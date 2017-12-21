@@ -71,6 +71,14 @@ network_configuration=$(
     --arg deployment_dns "$DEPLOYMENT_NW_DNS" \
     --arg deployment_gateway "$DEPLOYMENT_NW_GATEWAY" \
     --arg deployment_availability_zones "$DEPLOYMENT_NW_AZS" \
+    --argjson services_network_is_service_network $IS_SERVICE_NETWORK \
+    --arg services_network_name "$SERVICES_NETWORK_NAME" \
+    --arg services_vcenter_network "$SERVICES_VCENTER_NETWORK" \
+    --arg services_network_cidr "$SERVICES_NW_CIDR" \
+    --arg services_reserved_ip_ranges "$SERVICES_EXCLUDED_RANGE" \
+    --arg services_dns "$SERVICES_NW_DNS" \
+    --arg services_gateway "$SERVICES_NW_GATEWAY" \
+    --arg services_availability_zones "$SERVICES_NW_AZS" \
     '
     {
       "icmp_checks_enabled": $icmp_checks_enabled,
