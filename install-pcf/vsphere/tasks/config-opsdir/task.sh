@@ -102,6 +102,20 @@ network_configuration=$(
               "availability_zones": ($deployment_availability_zones | split(","))
             }
           ]
+        },
+        {
+          "name": $services_network_name,
+          "service_network": $services_network_is_service_network,
+          "subnets": [
+            {
+              "iaas_identifier": $services_vcenter_network,
+              "cidr": $services_network_cidr,
+              "reserved_ip_ranges": $services_reserved_ip_ranges,
+              "dns": $services_dns,
+              "gateway": $services_gateway,
+              "availability_zones": ($services_availability_zones | split(","))
+            }
+          ]
         }
       ]
     }'
