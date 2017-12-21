@@ -141,6 +141,7 @@ jq -n \
 )
 
 echo "Configuring IaaS and Director..."
+echo "Configuring IaaS and Director..."
 om-linux \
   --target https://$OPSMAN_DOMAIN_OR_IP_ADDRESS \
   --skip-ssl-validation \
